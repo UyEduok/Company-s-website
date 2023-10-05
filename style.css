@@ -1,0 +1,151 @@
+.gradient-background {
+    background: linear-gradient(300deg, red, gold, green);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .t-nav-link{
+    color: white;
+    font-weight: bold;
+  }
+
+  .section1-menu{
+      position: absolute;
+      right: 70px;
+      top: 20px;
+  }
+
+  .w-100{
+      height: 400px;
+  }
+
+  .slide{
+    position: relative;
+  }
+
+  .carousel-control-next{
+      background-color: green; 
+      border-radius: 50%; 
+      height: 25px; 
+      width: 25px;
+      position: absolute;
+      top: 40%;
+      right: 3%;
+  
+  }
+  .carousel-control-prev{
+      background-color: green; 
+      border-radius: 50%; 
+      height: 25px; 
+      width: 25px;
+      position: absolute;
+      top: 40%;
+      left: 3%;
+  }
+  .node-title{
+      font-weight: bold;
+  }
+
+  #service-section{
+    background-color: #f8f9fa;
+  }
+
+  #hse-section{
+    background-color: white;
+  }
+
+  .mb-footer{
+    color: white;
+    opacity: 0.7;
+  }
+  
+.footer-title{
+  font-weight: bolder;
+  color: white;
+}
+
+footer{
+  position: relative;
+}
+
+.footer-contact{
+  position: absolute;
+  top: 60px;
+  left: 70%;
+}
+
+.copyright{
+  position: absolute;
+  left: 38%;
+  bottom: 20px;
+}
+
+.section2-menu{
+  display: none;
+}
+
+/* Style for the ellipsis button */
+.ellipsis-button {
+  background: none;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+/* Style for the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Style for the dropdown links */
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown content when the ellipsis button is hovered over */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+@media (max-width: 992px) {
+  .copyright {
+    left: 20px;
+    bottom: 10px;
+  }
+  .footer-contact{
+    position: unset;
+  }
+  .section1-menu{
+    display: none;
+  }
+  .section2-menu{
+    display: inline;
+  }
+}
